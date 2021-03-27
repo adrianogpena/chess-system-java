@@ -99,7 +99,7 @@ public class ChessMatch {
 			if ((movedPiece.getColor() == Color.WHITE && target.getRow() == 0) ||
 					(movedPiece.getColor() == Color.BLACK && target.getRow() == 7)) {
 				promoted = (ChessPiece) board.piece(target);
-				promoted = replacePromotedìece("Q");
+				promoted = replacePromotedPiece("Q");
 			}
 		}
 
@@ -124,7 +124,7 @@ public class ChessMatch {
 		return (ChessPiece) capturedPiece;
 	}
 
-	public ChessPiece replacePromotedìece(String type) {
+	public ChessPiece replacePromotedPiece(String type) {
 		if (promoted == null) {
 			throw new IllegalStateException("There is no piece to be promoted");
 		}

@@ -50,7 +50,7 @@ public class Program {
 						type = sc.nextLine().toUpperCase();
 					}
 					
-					chessMatch.replacePromotedìece(type);
+					chessMatch.replacePromotedPiece(type);
 				}
 			}
 			catch (ChessException e) {
